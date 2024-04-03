@@ -330,7 +330,7 @@ class WLEDBridge {
 
 		const currentTime = Date.now();
 
-		if(currentTime - this.lastUpdate >= (Math.floor(Math.random() * 10000) + 50000)) {
+		if(currentTime - this.lastUpdate >= (Math.floor(Math.random() * 10000) + 1000000)) {
 			this.lastUpdate = currentTime;
 			this.getDeviceInfo();
 		}
